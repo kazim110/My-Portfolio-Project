@@ -8,15 +8,15 @@ body {
   margin: 0;
 }
 
-.main-container {    
-  display: flex;   
+.main-container {
+  display: flex;
   flex-direction: column;
   position: absolute;
   width: 375px;
   height: 652px;
   left: 0px;
   top: 0px;
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .header {
@@ -80,7 +80,7 @@ body {
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
