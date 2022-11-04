@@ -19,7 +19,7 @@ body {
   background: #fff;
 }
 
-.header {
+header {
   display: flex;
   align-content: space-between;
   position: absolute;
@@ -31,7 +31,7 @@ body {
   bottom: 0;
 }
 
-.logo {
+.nav-branding {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -43,7 +43,7 @@ body {
   top: calc(50% - 40px / 2);
 }
 
-.menu {
+.nav-menu {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -67,8 +67,8 @@ body {
   width: 375px;
   height: 604px;
   left: calc(50% - 375px / 2);
-  top: 92px;
-  background-image: url("./header-background.png");
+  top: 48px;
+  background-image: url("./img/header-background.png");
 }
 
 .title {
@@ -124,7 +124,8 @@ body {
   margin: 0;
 }
 
-.social-media-icon {
+.social-media-list {
+  list-style: none;
   display: flex;
   width: 170.17px;
   height: 20px;
