@@ -2,7 +2,7 @@
 * {
   box-sizing: border-box;
 }
-  
+
 body {
   font-family: Arial;
   margin: 0;
@@ -14,9 +14,9 @@ body {
   position: absolute;
   width: 375px;
   height: 652px;
-  left: 0px;
-  top: 0px;
-  background: #ffffff;
+  left: 0;
+  top: 0;
+  background: #fff;
 }
 
 .header {
