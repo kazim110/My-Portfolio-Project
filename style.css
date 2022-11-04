@@ -23,7 +23,8 @@ header {
   display: flex;
   align-content: space-between;
   position: absolute;
-  width: 375px;
+  width: auto;
+  max-width: 100%;
   height: 48px;
   left: 0;
   right: 0;
@@ -54,6 +55,11 @@ header {
   right: 24px;
   top: calc(50% - 40px / 2);
   border-radius: 8px;
+}
+
+.headline {
+  width: auto;
+  max-width: 100%;
 }
 
 .content-container {
