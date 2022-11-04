@@ -25,10 +25,10 @@ body {
   position: absolute;
   width: 375px;
   height: 48px;
-  left: 0px;
-  right: 0px;
-  top: 0px;
-  bottom: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .logo {
@@ -40,7 +40,7 @@ body {
   width: 100px;
   height: 40px;
   left: 12px;
-  top: calc(50% - 40px/2);
+  top: calc(50%-40px/2);
 }
 
 .menu {
@@ -52,7 +52,7 @@ body {
   width: 40px;
   height: 40px;
   right: 24px;
-  top: calc(50% - 40px/2);
+  top: calc(50%-40px/2);
   border-radius: 8px;
 }
 
@@ -71,7 +71,7 @@ body {
   background-image: url("./header-background.png");
 }
 
-.title {   
+.title {
   width: 327px;
   height: 150px;
   font-style: normal;
@@ -102,7 +102,7 @@ body {
 .social-media-title {
   display: flex;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   width: 117px;
   height: 24px;
@@ -117,11 +117,11 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
   flex: none;
   order: 0;
   flex-grow: 0;
-  margin: 0px;
+  margin: 0;
 }
 
 .social-media-icon {
