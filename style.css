@@ -146,6 +146,10 @@ header {
   flex-grow: 0;
 }
 
+ul li {
+  list-style-type: none;
+}
+
 .social-media-list > li {
   margin-right: 10px;
 }
@@ -407,11 +411,7 @@ header {
   flex-grow: 0;
 }
 
-ul li {
-  list-style-type: none;
-}
-
-.work-tech-used > li{
+.work-tech-used > li {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -645,7 +645,7 @@ ul li {
 
 .aboutme-secondary-btn > p:hover {
   height: 24px;
-  font-family: Arial,sans-serif;
+  font-family: Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
