@@ -789,6 +789,10 @@ ul li {
   width: 375px;
   height: 779px;
   left: 0px;
-  top: 5410px;
+  top: 4500px;
+}
+
+.contactme-form {
   background: #6070FF;
+  background-image: url("./img/backround1.png") url("./img/backround2.png");
 }
