@@ -783,3 +783,159 @@ ul li {
   bottom: -32px;
   background: #dfe1e6;
 }
+
+.contactme-section {
+  position: absolute;
+  width: 375px;
+  height: 779px;
+  left: 0;
+  top: 4500px;
+  background: #6070ff;
+  border-radius: 80px 0 0 0;
+}
+
+.cotactme-background {
+  position: absolute;
+  left: 153px;
+  top: 21px;
+}
+
+.contactme-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 780px;
+}
+
+form > h2 {
+  position: relative;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  top: 50px;
+}
+
+.contactme-p {
+  position: relative;
+  width: 327px;
+  height: 102px;
+  top: 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.input {
+  padding: 10px;
+  position: relative;
+  align-content: center;
+  width: 327px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  top: 60px;
+  margin-bottom: 20px;
+}
+
+#text-area {
+  position: absolute;
+  width: 329px;
+  padding: 10px;
+  top: 480px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+}
+
+.contactme-btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 126px;
+  height: 48px;
+  left: 24px;
+  top: 685px;
+  border: 1px solid #6070ff;
+  background: #fff;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.contactme-btn:hover {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 126px;
+  height: 48px;
+  left: 24px;
+  top: 685px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  background: #6070ff;
+}
+
+.contactme-btn > p:hover {
+  width: 100px;
+  height: 24px;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.home-indicator {
+  position: absolute;
+  width: 375px;
+  height: 34px;
+  left: calc(50% - 375px / 2);
+  bottom: 0;
+}
+
+.home-indicator-shape {
+  position: absolute;
+  width: 134px;
+  height: 5px;
+  left: calc(50% - 134px / 2 - 0.5px);
+  bottom: 8px;
+  background: #0d151e;
+  border-radius: 10px;
+}
