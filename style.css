@@ -46,6 +46,10 @@ header {
   top: calc(50% - 40px / 2);
 }
 
+.nav-branding:hover {
+  scale: 1.5;
+}
+
 .nav-menu {
   display: flex;
   flex-direction: row;
