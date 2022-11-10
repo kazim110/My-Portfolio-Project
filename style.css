@@ -153,6 +153,10 @@ header {
 
 ul li {
   list-style-type: none;
+  transition: all 3s;
+}
+ul li:hover {
+  transform: rotate(360deg);
 }
 
 .social-media-list > li {
