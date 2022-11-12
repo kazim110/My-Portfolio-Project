@@ -5,6 +5,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background: #e5e5e5;
   margin: 0;
 }
 
@@ -59,12 +60,15 @@ header {
   border-radius: 8px;
 }
 
+.top-menu-list {
+  visibility: hidden;
+}
+
 .headline {
   width: auto;
   max-width: 100%;
   left: 0;
   top: 0;
-  background: #fff;
 }
 
 .content-container {
@@ -82,6 +86,19 @@ header {
   border-radius: 0 0 0 80px;
   background: #fff;
   background-image: url("./img/header-background.png");
+}
+
+.content-container > img {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.content-container > ul {
+  visibility: visible;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .title {
@@ -114,17 +131,18 @@ header {
 
 .social-media-title {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   padding: 0;
   gap: 16px;
-  width: 117px;
+  width: 144px;
   height: 24px;
-  order: 2;
-  flex-grow: 0;
+  position: relative;
+  order: 3;
 }
 
 .social-media-title > h6 {
-  width: 117px;
+  width: auto;
   height: 24px;
   font-style: normal;
   font-weight: 500;
@@ -573,6 +591,8 @@ ul li {
   right: 88.27%;
   top: 65%;
   bottom: 18.88%;
+  height: 20px;
+  width: 20px;
 }
 
 .aboutme-linkedin-icon {
@@ -589,6 +609,8 @@ ul li {
   right: 67.2%;
   top: 65.5%;
   bottom: 19.21%;
+  height: 20px;
+  width: 20px;
 }
 
 .aboutme-github-icon {
@@ -597,6 +619,8 @@ ul li {
   right: 57.07%;
   top: 65%;
   bottom: 18.87%;
+  height: 20px;
+  width: 20px;
 }
 
 .aboutme-free-icon {
@@ -605,6 +629,8 @@ ul li {
   right: 48.22%;
   top: 65%;
   bottom: 18.87%;
+  height: 20px;
+  width: 20px;
 }
 
 .aboutme-secondary-btn {
@@ -615,7 +641,6 @@ ul li {
   padding: 12px;
   gap: 10px;
   height: 48px;
-  margin-left: 24px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   background: #fff;
@@ -623,7 +648,6 @@ ul li {
   order: 3;
   position: relative;
   flex-grow: 0;
-  margin-top: 485px;
 }
 
 .aboutme-secondary-btn:hover {
@@ -635,13 +659,11 @@ ul li {
   padding: 12px;
   gap: 10px;
   height: 48px;
-  margin-left: 24px;
   border-radius: 8px;
   background: #6070ff;
   flex: none;
   order: 3;
   flex-grow: 0;
-  margin-top: 485px;
 }
 
 .aboutme-secondary-btn > p:hover {
@@ -667,6 +689,9 @@ ul li {
   align-items: center;
   width: 327px;
   height: 464.15px;
+  position: absolute;
+  margin-top: 600px;
+  left: -18px;
 }
 
 .languages {
@@ -785,6 +810,10 @@ ul li {
 }
 
 .contactme-section {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  padding: 114px 24px;
   position: absolute;
   width: 375px;
   height: 779px;
@@ -794,10 +823,11 @@ ul li {
   border-radius: 80px 0 0 0;
 }
 
-.cotactme-background {
+.contactme-background {
   position: absolute;
   left: 153px;
   top: 21px;
+  content: url("./img/backround2.png");
 }
 
 .contactme-form {
@@ -806,6 +836,8 @@ ul li {
   align-items: center;
   padding: 20px;
   height: 780px;
+  position: relative;
+  margin-top: -131px;
 }
 
 form > h2 {
@@ -938,4 +970,522 @@ form > h2 {
   bottom: 8px;
   background: #0d151e;
   border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    position: relative;
+    background: #e5e5e5;
+  }
+
+  header {
+    position: relative;
+    width: 1349px;
+    height: 72px;
+    left: 0;
+    top: 0;
+    max-width: none;
+  }
+
+  .nav-branding {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 12px;
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    left: 143px;
+    top: calc(50% - 40px / 2);
+  }
+
+  .nav-menu {
+    position: relative;
+  }
+
+  .nav-menu > a {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+
+  .top-menu-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    position: absolute;
+    width: 259px;
+    left: 1039px;
+    visibility: visible;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .top-menu-list a {
+    text-decoration: none;
+    width: 63px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #344563;
+  }
+
+  .headline {
+    position: relative;
+    height: 846px;
+    left: 0;
+    width: 100%;
+    top: -1px;
+  }
+
+  .content-container {
+    position: relative;
+    width: 100%;
+    height: 585px;
+    left: 0;
+    top: 1px;
+    background: #fff;
+    margin: 0;
+  }
+
+  .content-container > img {
+    visibility: visible;
+    position: absolute;
+    width: 1210px;
+    height: 550px;
+    left: 100px;
+    top: 5px;
+  }
+
+  .headline-texts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 12px;
+    position: absolute;
+    width: 920px;
+    height: 268px;
+    left: 260px;
+    top: calc(50% - 340px / 2);
+  }
+
+  .title {
+    width: auto;
+    height: 122px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.37px;
+    color: #091e42;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .content {
+    width: auto;
+    height: 160px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .social-media-title {
+    margin-top: 270px;
+    position: absolute;
+  }
+
+  .social-media-title > h6 {
+    width: 148px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .social-media-list {
+    position: absolute;
+    width: 254.2px;
+    height: 29px;
+    left: 215px;
+    top: 426px;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  .social-media-list > li {
+    margin-right: 10px;
+    padding: 10px;
+    height: 100%;
+    width: 30px;
+  }
+
+  .twitter-icon {
+    position: absolute;
+    left: 18.06%;
+    right: 80.56%;
+    top: 24.5%;
+  }
+
+  .linkedin-icon {
+    position: absolute;
+    left: 33.1%;
+    top: 24.5%;
+  }
+
+  .m-icon {
+    position: absolute;
+    left: 49.5%;
+    right: 75.07%;
+    top: 34.6%;
+    bottom: 87.12%;
+  }
+
+  .github-icon {
+    position: absolute;
+    left: 65.3%;
+    top: 20.5%;
+  }
+
+  .free-icon {
+    position: absolute;
+    left: 80.9%;
+    top: 23.5%;
+  }
+
+  .works-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 142px;
+    position: relative;
+    width: 100%;
+    height: 2694px;
+    top: 0;
+  }
+
+  .card {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 1156px;
+    height: 496px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .card img {
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+  }
+
+  .work-content-text {
+    width: auto;
+  }
+
+  .work-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 445px;
+  }
+
+  .aboutme-section {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    max-width: none;
+    align-items: center;
+    padding: 16px;
+    gap: 12px;
+    width: 100%;
+    height: 924px;
+    border-radius: 0 80px 0 0;
+    top: 0;
+  }
+
+  .aboutme-content {
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 24px;
+    position: relative;
+    width: 447px;
+    height: 641px;
+    left: 142px;
+  }
+
+  .aboutme-content .social-media-title {
+    margin-top: 330px;
+  }
+
+  .aboutme-social-media-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    width: 200px;
+    height: 40px;
+    order: 3;
+    flex-grow: 0;
+    margin-top: 45px;
+  }
+
+  .aboutme-social-media-list > li {
+    margin-right: 10px;
+    display: flex;
+    height: 30px;
+    width: 33px;
+  }
+
+  .aboutme-social-media-list a {
+    margin-top: -23px;
+  }
+
+  .aboutme-twitter-icon {
+    position: absolute;
+    left: 0;
+    top: 64%;
+  }
+
+  .aboutme-linkedin-icon {
+    position: absolute;
+    top: 64%;
+    margin-left: -19px;
+  }
+
+  .aboutme-m-icon {
+    position: absolute;
+    top: 64%;
+    left: 19.1%;
+  }
+
+  .aboutme-github-icon {
+    position: absolute;
+    left: 28.1%;
+    top: 64%;
+  }
+
+  .aboutme-free-icon {
+    position: absolute;
+    left: 37%;
+    top: 64%;
+  }
+
+  .aboutme-secondary-btn {
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .aboutme-secondary-btn:hover {
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 24px;
+    width: 544px;
+    height: 617px;
+    position: absolute;
+    left: 632px;
+    margin-top: 0;
+  }
+
+  .languages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .arrow {
+    width: 327px;
+    height: 72px;
+    display: flex;
+  }
+
+  .down-arrow {
+    left: 242px;
+  }
+
+  .language-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 12px;
+    width: 414px;
+    height: 144px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .language-list > ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo-wrapper {
+    width: 122px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    background: #f7f7f9;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .text-logo {
+    left: 12px;
+    top: 64px;
+  }
+
+  .text-logo h3 {
+    margin-left: 0;
+  }
+
+  .FS-wrapper {
+    width: 521px;
+    height: 72px;
+  }
+
+  .side-arrow {
+    left: 226px;
+  }
+
+  .contactme-section {
+    position: relative;
+    width: 100%;
+    height: 846px;
+    left: 0;
+    top: -132px;
+    background: #6070ff;
+  }
+
+  .contactme-background {
+    position: absolute;
+    width: 1239.7px;
+    height: 702.7px;
+    left: 55.3px;
+    top: 78px;
+    content: url("./img/contact-form-background.png");
+  }
+
+  .contactme-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 780px;
+    position: relative;
+    margin-top: -79px;
+  }
+
+  form > h2 {
+    position: relative;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #fff;
+    top: 50px;
+  }
+
+  .contactme-p {
+    width: 509px;
+  }
+
+  .input {
+    width: 426px;
+    border-radius: 0;
+    top: 25px;
+  }
+
+  #text-area {
+    width: 426px;
+    top: 449px;
+    border-radius: 0;
+  }
+
+  .contactme-btn {
+    position: relative;
+    width: 134px;
+    height: 48px;
+    top: 265px;
+    left: 0;
+  }
+
+  .contactme-btn:hover {
+    position: relative;
+    width: 134px;
+    height: 48px;
+    top: 265px;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+    background: #6070ff;
+  }
+
+  .home-indicator-shape {
+    visibility: hidden;
+  }
 }
