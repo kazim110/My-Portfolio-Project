@@ -47,6 +47,10 @@ header {
   top: calc(50% - 40px / 2);
 }
 
+.nav-branding:hover {
+  scale: 1.5;
+}
+
 .nav-menu {
   display: flex;
   flex-direction: row;
@@ -167,6 +171,10 @@ header {
 
 ul li {
   list-style-type: none;
+  transition: all 3s;
+}
+ul li:hover {
+  transform: rotate(360deg);
 }
 
 .social-media-list > li {
