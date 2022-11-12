@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  overflow-x:hidden;
 }
 
 body {
@@ -69,7 +70,6 @@ header {
   max-width: 100%;
   left: 0;
   top: 0;
-  background: #fff;
 }
 
 .content-container {
@@ -1215,6 +1215,10 @@ form > h2 {
     width: 544px;
     height: 448px;
     border-radius: 8px;
+  }
+
+  .work-content-text {
+    width: auto;
   }
 
   .work-description {
