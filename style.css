@@ -1,7 +1,6 @@
 
 * {
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body {
@@ -976,7 +975,6 @@ form > h2 {
 @media (min-width: 768px) {
   .main-container {
     position: relative;
-    height: 5125px;
     background: #e5e5e5;
   }
 
@@ -1041,15 +1039,16 @@ form > h2 {
   }
 
   .headline {
-    position: absolute;
+    position: relative;
     height: 846px;
     left: 0;
-    top: 71px;
+    width: 100%;
+    top: -1px;
   }
 
   .content-container {
     position: relative;
-    width: 1349px;
+    width: 100%;
     height: 585px;
     left: 0;
     top: 1px;
@@ -1184,10 +1183,10 @@ form > h2 {
     align-items: center;
     padding: 40px;
     gap: 142px;
-    position: absolute;
-    width: 1301px;
+    position: relative;
+    width: 100%;
     height: 2694px;
-    left: 48px;
+    top: 0;
   }
 
   .card {
@@ -1240,9 +1239,10 @@ form > h2 {
     align-items: center;
     padding: 16px;
     gap: 12px;
-    width: 1346px;
+    width: 100%;
     height: 924px;
     border-radius: 0 80px 0 0;
+    top: 0;
   }
 
   .aboutme-content {
@@ -1409,11 +1409,11 @@ form > h2 {
   }
 
   .contactme-section {
-    position: absolute;
-    width: 1346px;
+    position: relative;
+    width: 100%;
     height: 846px;
     left: 0;
-    top: 4219px;
+    top: -132px;
     background: #6070ff;
   }
 
