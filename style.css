@@ -173,12 +173,37 @@ ul li {
   list-style-type: none;
   transition: all 3s;
 }
-ul li:hover {
-  transform: rotate(360deg);
-}
 
 .social-media-list > li {
   margin-right: 10px;
+}
+
+.work-tech-used > li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+}
+
+.aboutme-social-media-list > li {
+  margin-right: 10px;
+}
+
+ul li:hover {
+  transform: rotate(360deg);
 }
 
 .twitter-icon {
@@ -438,26 +463,6 @@ ul li:hover {
   flex-grow: 0;
 }
 
-.work-tech-used > li {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 4px 12px;
-  height: 24px;
-  background: #ebebff;
-  border-radius: 8px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  font-family: Arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-}
-
 .action-div {
   width: 295px;
   height: 72px;
@@ -587,10 +592,6 @@ ul li:hover {
   height: 40px;
   order: 3;
   flex-grow: 0;
-}
-
-.aboutme-social-media-list > li {
-  margin-right: 10px;
 }
 
 .aboutme-twitter-icon {
