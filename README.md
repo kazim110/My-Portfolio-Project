@@ -40,6 +40,8 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@githubhandle](https://github.com/kazim110)
 
+- GitHub Page: https://kazim110.github.io/
+
  
 ## 🤝 Contributing
 
