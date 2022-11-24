@@ -43,10 +43,37 @@ header {
   margin-right: 20px;
 }
 
+.nav-menu-click{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  padding: 8px 20px;
+  background: #6070FF;
+  opacity: 0.8;
+  direction: rtl;
+}
+
 .top-menu-list {
-  visibility: hidden;
-  width: 0;
-  height: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+.top-menu-list li > a{
+  text-decoration: none;
+  font-size: 32px;
+  line-height: 44px;
+  display: block;
+  text-align: left;
+  color: #fff;
+  margin-left: 28px;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .content-container {
@@ -111,11 +138,11 @@ header {
 
 ul li {
   list-style-type: none;
-  transition: all 3s;
 }
 
 .social-media-list > li {
   margin-right: 10px;
+  transition: all 3s;
 }
 
 .work-tech-used > li {
@@ -541,24 +568,25 @@ form > h2 {
     padding: 10px 12px;
   }
 
+  .nav-menu {
+    align-items: center;
+  }
+
   .nav-menu > a {
-    visibility: hidden;
-    width: 0;
-    height: 0;
+   display: none;
   }
 
   .top-menu-list {
     display: flex;
+    visibility: visible;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
-    visibility: visible;
     list-style-type: none;
     padding: 0;
     overflow: hidden;
   }
 
-  .top-menu-list a {
+  .top-menu-list li > a{
     text-decoration: none;
     font-size: 15px;
     line-height: 20px;
@@ -566,12 +594,6 @@ form > h2 {
     align-items: center;
     text-align: center;
     color: #344563;
-  }
-
-  .top-menu-list {
-    visibility: visible;
-    height: auto;
-    width: auto;
   }
 
   .content-container {
@@ -757,7 +779,7 @@ form > h2 {
   }
 
   .contactme-btn:hover {
-    border: 1px solid #6070ff;
+    border: 1px solid #fff;
     border-radius: 8px;
     box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
     background: #6070ff;

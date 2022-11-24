@@ -9,16 +9,16 @@
 </head>
 <body>
     <div class="main-container">
-        <header>
+        <header class="topnav">
             <div class="nav-branding">
-                <a href="url"><img src="./img/logo-placeholder.png" alt=""></a>
+                <a href="#"><img src="./img/logo-placeholder.png" alt=""></a>
             </div>
             <nav class="nav-menu">
-                <a href="url"><img src="./img/icon-menu.png" alt="Portfolio logo image"></a>
-                <ul class="top-menu-list">
-                    <li><a href="default.asp">Contact</a></li>
-                    <li><a href="news.asp">About</a></li>
-                    <li><a href="contact.asp">Portfolio</a></li>
+                <a  class="icon" href="javascript:void(0);" onclick="hamburgerAction()"><img class="nav-menu-img" src="./img/icon-menu.png" alt="Portfolio logo image"></a>
+                <ul id="myLinks" class="top-menu-list">
+                    <li><a onclick="scrollAction()" href="#works">Portfolio</a></li>
+                    <li><a onclick="scrollAction()" href="#aboutme">About</a></li>
+                    <li><a onclick="scrollAction()" href="#contactme">Contact</a></li>
                   </ul> 
             </nav>
         </header>
@@ -61,7 +61,7 @@
                 </ul>
             </div>
         </section>
-        <section class="works-section">
+        <section id="works" class="works-section">
             <div class="card">
                 <img src="./img/snapshoot-portfolio.png" alt="Avatar">
                 <div class="work-description">
@@ -241,7 +241,7 @@
                 </div>
             </div>
         </section>
-        <section class="aboutme-section">
+        <section id="aboutme" class="aboutme-section">
             <div class="aboutme-content">
 
                 <div class="title">
@@ -352,7 +352,7 @@
                 </li>
               </ul>
         </section>
-        <section class="contactme-section">
+        <section id="contactme" class="contactme-section">
             <div class="contactme-container">
                 <form action="https://formspree.io/f/mlevabzj" method="post" class="contactme-form">
                     <h2>Contact Me</h2>
@@ -371,6 +371,7 @@
                 </div>
             </div>
         </section>
-    </div>  
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
