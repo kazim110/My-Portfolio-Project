@@ -30,3 +30,6 @@ function scrollAction() {
 
 menuIcon.addEventListener('click', hamburgerAction);
 menuList.addEventListener('click', scrollAction);
+
+// -----------Popup Window Section
+
