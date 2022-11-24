@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Project</title>
+    <title>Kazim Mohammad | Portfolio Project</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -19,11 +19,20 @@
                     <li><a onclick="scrollAction()" href="#works">Portfolio</a></li>
                     <li><a onclick="scrollAction()" href="#aboutme">About</a></li>
                     <li><a onclick="scrollAction()" href="#contactme">Contact</a></li>
+                <a href="url"><img src="./img/logo-placeholder.png" alt="logo image"></a>
+            </div>
+            <nav class="nav-menu">
+                <a href="url"><img src="./img/icon-menu.png" alt="icon image"></a>
+                <ul class="top-menu-list">
+                    <li><a href="default.asp">Contact</a></li>
+                    <li><a href="news.asp">About</a></li>
+                    <li><a href="contact.asp">Portfolio</a></li>
                   </ul> 
             </nav>
         </header>
         <section class="headline">
             <div class="content-container">
+                <img src="./img/desk-headline-back.png" alt="headline icon">
                 <div class="headline-texts">
                     <div class="title">
                         <h1>I'm Kazim<br>Glad to see you!</h1>
@@ -44,19 +53,19 @@
                 </div>
                 <ul class="social-media-list">
                     <li>
-                        <a href="url" class="twitter-icon"><img src="./img/icon-tiwtter.svg" alt=""></a>
+                        <a href="url" class="twitter-icon"><img src="./img/icon-tiwtter.svg" alt="twitter icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="linkedin-icon"><img src="./img/icon-linkedin.svg" alt=""></a>
+                        <a href="url" class="linkedin-icon"><img src="./img/icon-linkedin.svg" alt="linkedin icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="m-icon"><img src="./img/icon-m.svg" alt=""></a>
+                        <a href="url" class="m-icon"><img src="./img/icon-m.svg" alt="m icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="github-icon"><img src="./img/icon-github.svg" alt=""></a>
+                        <a href="url" class="github-icon"><img src="./img/icon-github.svg" alt="github icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="free-icon"><img src="./img/icon-free.svg" alt=""></a>
+                        <a href="url" class="free-icon"><img src="./img/icon-free.svg" alt="free icon"></a>
                     </li>
                 </ul>
             </div>
@@ -262,19 +271,19 @@
                 </div>
                 <ul class="social-media-list aboutme-social-media-list">
                     <li>
-                        <a href="url" class="aboutme-twitter-icon"><img src="./img/icon-tiwtter.svg" alt=""></a>
+                        <a href="url" class="aboutme-twitter-icon"><img src="./img/icon-tiwtter.svg" alt="twitter icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="aboutme-linkedin-icon"><img src="./img/icon-linkedin.svg" alt=""></a>
+                        <a href="url" class="aboutme-linkedin-icon"><img src="./img/icon-linkedin.svg" alt="linkedin icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="aboutme-m-icon"><img src="./img/icon-m.svg" alt=""></a>
+                        <a href="url" class="aboutme-m-icon"><img src="./img/icon-m.svg" alt="m icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="aboutme-github-icon"><img src="./img/icon-github.svg" alt=""></a>
+                        <a href="url" class="aboutme-github-icon"><img src="./img/icon-github.svg" alt="github icon"></a>
                     </li>
                     <li>
-                        <a href="url" class="aboutme-free-icon"><img src="./img/icon-free.svg" alt=""></a>
+                        <a href="url" class="aboutme-free-icon"><img src="./img/icon-free.svg" alt="free icon"></a>
                     </li>
                 </ul>
                 <button class="secondary-btn"><p>Get my resume</p></button>
@@ -369,6 +378,25 @@
                 <div class="home-indicator">
                     <div class="home-indicator-shape"></div>
                 </div>
+        <section class="contactme-section">
+            <img class="contactme-background" src="./img/contact-form-background.png" alt="contact form background">
+            <form action="https://formspree.io/f/mlevabzj" method="post" class="contactme-form">
+                <h2>Contact Me</h2>
+                <div>
+                <p class="contactme-p">If you have an application you are interested in
+                     developing, a feature that you need built or a project
+                     that needs coding. I'd love to help with it.</p>
+                </div>
+                <label for="name"></label><br>
+                <input class="input" id="name" type="text" name="name" placeholder="Sollomon Teka" maxlength="30" required>
+                <label for="email"></label><br>
+                <input class="input" id="email" type="email" name="email" placeholder="sollomonteka@gmail.com" required>
+                <label for="text-area"></label><br>
+                <textarea name="" id="text-area" maxlength="500" name="message" cols="30" rows="10" placeholder="Write your message here" required max="500"></textarea>
+                <button class="contactme-btn" type="submit"><p>Get in touch</p></button>
+            </form>
+            <div class="home-indicator">
+                <div class="home-indicator-shape"></div>
             </div>
         </section>
     </div>
