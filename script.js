@@ -6,9 +6,9 @@ var works=document.querySelector('.works-section')
 var aboutme=document.querySelector('.aboutme-section')
 var contactme=document.querySelector('.contactme-section')
 var headline=document.querySelector('.headline')
+hamburger.style.display='flex'
 
 function hamburgerAction() {
-  
     if(hamburger.style.display==="block"){
         hamburger.style.display="none";
         burgerMenu.classList.replace('nav-menu-click','nav-menu')
