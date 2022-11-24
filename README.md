@@ -7,7 +7,7 @@
 
 ## Built With
 
-- Html and Css
+- Html, Css and JavaScript
 - No Frameworks
 - Linters 
 
@@ -41,6 +41,8 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@githubhandle](https://github.com/kazim110)
 
 - GitHub Page: https://kazim110.github.io/
+
+- Discription Video: https://www.loom.com/share/ac72c7071eba4f1c8cd7728bfd6508af
 
  
 ## 🤝 Contributing
