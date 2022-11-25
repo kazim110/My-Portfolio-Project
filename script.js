@@ -3,7 +3,7 @@ const burgerMenu = document.querySelector('.nav-menu,.nav-menu-click');
 const burgerImg = document.querySelector('.nav-menu-img');
 const mainContainer = document.querySelector('.main-container');
 const menuIcon = document.querySelector('.icon');
-const menuList = document.querySelectorAll('.top-menu-list li');
+// const menuList = document.querySelectorAll('.top-menu-list li');
 
 function hamburgerAction() {
   if (hamburger.style.display === 'block') {
@@ -19,14 +19,14 @@ function hamburgerAction() {
   }
 }
 
-function scrollAction() {
-  if (hamburger.style.display === 'block') {
-    mainContainer.style.position = 'relative';
-    hamburger.style.display = 'none';
-    burgerMenu.classList.replace('nav-menu-click', 'nav-menu');
-    burgerImg.src = 'img/icon-menu.png';
-  }
-}
+// function scrollAction() {
+//   if (hamburger.style.display === 'block') {
+//     mainContainer.style.position = 'relative';
+//     hamburger.style.display = 'none';
+//     burgerMenu.classList.replace('nav-menu-click', 'nav-menu');
+//     burgerImg.src = 'img/icon-menu.png';
+//   }
+// }
 
 menuIcon.addEventListener('click', hamburgerAction);
 // menuList.addEventListener('click', scrollAction);
@@ -76,13 +76,13 @@ const cards = document.querySelector('.cards');
 
 cards.innerHTML = '';
 
-for(let j = 0; j < workDetails.length; j++){
-let techLang = '';
-workDetails[j].workLanguages.forEach((workLanguages) => {
-  techLang = `${techLang}<li>${workLanguages}</li>`;
-});
+for (let j = 0; j < workDetails.length; j += 1) {
+  let techLang = '';
+  workDetails[j].workLanguages.forEach((workLanguages) => {
+    techLang = `${techLang}<li>${workLanguages}</li>`;
+  });
 
-cards.innerHTML += `<div class="card">
+  cards.innerHTML += `<div class="card">
 <img class="work-img" src="./img/${workDetails[j].workImg}" alt="Avatar">
 <div class="work-description">
     <div class="work-title">
@@ -129,8 +129,8 @@ const modalLive = document.querySelector('.mod-live');
 const modalSource = document.querySelector('.mod-source');
 const span = document.getElementsByClassName('close')[0];
 
-for(let i=0;i<workDetails.length;i++){
-  document.querySelector(`.work-modal-${i}`).addEventListener('click',()=>{
+for (let i = 0; i < workDetails.length; i += 1) {
+  document.querySelector(`.work-modal-${i}`).addEventListener('click', () => {
     let techLang = '';
     workDetails[i].workLanguages.forEach((workLanguages) => {
       techLang = `${techLang}<li>${workLanguages}</li>`;
