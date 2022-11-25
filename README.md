@@ -1,67 +1,146 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# 📗 Table of Contents
 
-# Project Name
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-> My Portfolio project.
+# 📖 [Kazim's Portfolio] <a name="about-project"></a>
+
+> You can find my recent works here. This is also a direct way to contact with me
+
+**[Kazim's Portfolio]** is a...
+
+## 🛠 Built With <a name="built-with"></a>
+HTML 
+CSS 
+JAVASCRIPT
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">HTML</a></li>
+    <li><a href="https://reactjs.org/">CSS</a></li>
+    <li><a href="https://reactjs.org/">JAVASCRIPT</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://expressjs.com/">Github Pages</a></li>
+  </ul>
+</details>
+
+### Key Features <a name="key-features"></a>
+
+- **[Portfolio_Page]**
+- **[About_Page]**
+- **[Contact_Page]**
 
 
-## Built With
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- Html, Css and JavaScript
-- No Frameworks
-- Linters 
+- [Live Demo Link](https://kazim110.github.io)
 
 
+## 💻 Getting Started <a name="getting-started"></a>
 
+ First Clone it 
+ run npm install
+ run npm start
 
-## Getting Started
-
-
-
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+In order to run this project you need:
+
+
 ### Setup
+
+Clone this repository to your desired folder:
+
 
 ### Install
 
+Install this project with:
+
+
+
 ### Usage
+
+To run the project, execute the following command:
+
+
 
 ### Run tests
 
+To run tests, run the following command:
+
+
+
+
 ### Deployment
 
+You can deploy this project using:
 
 
-## Authors
 
-👤 **Kazim**
+
+## 👥 Authors <a name="authors">Mohammad Kazim</a>
+
+> Mention all of the collaborators of this project.
+
+👤 **Author1**
 
 - GitHub: [@githubhandle](https://github.com/kazim110)
+- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
-- GitHub Page: https://kazim110.github.io/
 
-- Discription Video: https://www.loom.com/share/ac72c7071eba4f1c8cd7728bfd6508af
+## 🔭 Future Features <a name="future-features"></a>
 
- 
-## 🤝 Contributing
+- [ ] **[Additional_Animation]**
+- [ ] **[Powerfull_UI]**
+
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
 
-Give a ⭐️ if you like this project!
+## ⭐️ Show your support <a name="support"></a>
 
-## Acknowledgments
+Give a ⭐ if you like this project!
+
+
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
 
-## 📝 License
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
