@@ -22,7 +22,6 @@ menuIcon.addEventListener('click', hamburgerAction);
 
 // -----------Popup Window Section
 
-
 const workDetails = [
   {
     workId: '1',
@@ -112,11 +111,6 @@ for (let j = 0; j < workDetails.length; j += 1) {
 
 const modal = document.getElementById('myModal');
 const modalTitle = document.querySelector('.mod-title');
-const modalImg = document.querySelector('.mod-img');
-const modalDesc = document.querySelector('.mod-desc');
-const modalLang = document.querySelector('.mod-lang');
-const modalLive = document.querySelector('.mod-live');
-const modalSource = document.querySelector('.mod-source');
 const span = document.getElementsByClassName('close')[0];
 
 const modalDynamic = document.getElementById('modal-daynamic');
@@ -130,7 +124,6 @@ for (let i = 0; i < workDetails.length; i += 1) {
       techLang = `${techLang}<li>${workLanguages}</li>`;
     });
     modalTitle.innerHTML = workDetails[i].workTitle;
-    
 
     modalDynamic.innerHTML += `<img class="mod-img" src="./img/${workDetails[i].workImg}" alt="Avatar">
 <div class="mod-desc-content">
@@ -150,8 +143,6 @@ for (let i = 0; i < workDetails.length; i += 1) {
     modal.style.display = 'flex';
   });
 }
-
-
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
