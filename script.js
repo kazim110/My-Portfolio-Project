@@ -3,7 +3,6 @@ const burgerMenu = document.querySelector('.nav-menu,.nav-menu-click');
 const burgerImg = document.querySelector('.nav-menu-img');
 const mainContainer = document.querySelector('.main-container');
 const menuIcon = document.querySelector('.icon');
-// const menuList = document.querySelectorAll('.top-menu-list li');
 
 function hamburgerAction() {
   if (hamburger.style.display === 'block') {
@@ -19,17 +18,7 @@ function hamburgerAction() {
   }
 }
 
-// function scrollAction() {
-//   if (hamburger.style.display === 'block') {
-//     mainContainer.style.position = 'relative';
-//     hamburger.style.display = 'none';
-//     burgerMenu.classList.replace('nav-menu-click', 'nav-menu');
-//     burgerImg.src = 'img/icon-menu.png';
-//   }
-// }
-
 menuIcon.addEventListener('click', hamburgerAction);
-// menuList.addEventListener('click', scrollAction);
 
 // -----------Popup Window Section
 
@@ -122,12 +111,11 @@ for (let j = 0; j < workDetails.length; j += 1) {
 
 const modal = document.getElementById('myModal');
 const modalTitle = document.querySelector('.mod-title');
-const modalImg = document.querySelector('.mod-img');
-const modalDesc = document.querySelector('.mod-desc');
-const modalLang = document.querySelector('.mod-lang');
-const modalLive = document.querySelector('.mod-live');
-const modalSource = document.querySelector('.mod-source');
 const span = document.getElementsByClassName('close')[0];
+
+const modalDynamic = document.getElementById('modal-daynamic');
+
+modalDynamic.innerHTML = '';
 
 for (let i = 0; i < workDetails.length; i += 1) {
   document.querySelector(`.work-modal-${i}`).addEventListener('click', () => {
@@ -135,13 +123,24 @@ for (let i = 0; i < workDetails.length; i += 1) {
     workDetails[i].workLanguages.forEach((workLanguages) => {
       techLang = `${techLang}<li>${workLanguages}</li>`;
     });
-    modal.style.display = 'flex';
-    modalImg.src = `./img/${workDetails[i].workImg}`;
     modalTitle.innerHTML = workDetails[i].workTitle;
-    modalDesc.innerHTML = workDetails[i].workDesc;
-    modalLang.innerHTML = techLang;
-    modalLive.setAttribute('href', workDetails[i].liveLink);
-    modalSource.setAttribute('href', workDetails[i].projLink);
+
+    modalDynamic.innerHTML += `<img class="mod-img" src="./img/${workDetails[i].workImg}" alt="Avatar">
+<div class="mod-desc-content">
+    <p class="mod-desc">
+    ${workDetails[i].workDesc}
+    </p> 
+    <div class="mod-lang-btn">
+        <ul class="mod-lang work-tech-used">
+        ${techLang}
+        </ul>
+        <div class="btn-contain">
+            <button class="btn-mod"><a class="mod-live" href="${workDetails[i].liveLink}">See Live <img src="./img/live.png"></a></button>
+            <button class="btn-mod"><a class="mod-source" href="${workDetails[i].projLink}">See Source <img src="./img/git.png"></a></button>
+        </div>
+    </div>
+</div>`;
+    modal.style.display = 'flex';
   });
 }
 
