@@ -22,6 +22,7 @@ menuIcon.addEventListener('click', hamburgerAction);
 
 // -----------Popup Window Section
 
+
 const workDetails = [
   {
     workId: '1',
@@ -118,21 +119,46 @@ const modalLive = document.querySelector('.mod-live');
 const modalSource = document.querySelector('.mod-source');
 const span = document.getElementsByClassName('close')[0];
 
+let modalDynamic = document.getElementById('modal-daynamic');
+
+modalDynamic = '';
+
 for (let i = 0; i < workDetails.length; i += 1) {
   document.querySelector(`.work-modal-${i}`).addEventListener('click', () => {
     let techLang = '';
     workDetails[i].workLanguages.forEach((workLanguages) => {
       techLang = `${techLang}<li>${workLanguages}</li>`;
     });
-    modal.style.display = 'flex';
-    modalImg.src = `./img/${workDetails[i].workImg}`;
     modalTitle.innerHTML = workDetails[i].workTitle;
-    modalDesc.innerHTML = workDetails[i].workDesc;
-    modalLang.innerHTML = techLang;
-    modalLive.setAttribute('href', workDetails[i].liveLink);
-    modalSource.setAttribute('href', workDetails[i].projLink);
+    
+
+    modalDynamic.innerHTML += `<img class="mod-img" src="./img/${workDetails[i].workImg}" alt="Avatar">
+<div class="mod-desc-content">
+    <p class="mod-desc">
+    ${workDetails[i].workDesc}
+    </p> 
+    <div class="mod-lang-btn">
+        <ul class="mod-lang work-tech-used">
+        ${techLang}
+        </ul>
+        <div class="btn-contain">
+            <button class="btn-mod"><a class="mod-live" href="${workDetails[i].liveLink}">See Live <img src="./img/live.png"></a></button>
+            <button class="btn-mod"><a class="mod-source" href="${workDetails[i].projLink}">See Source <img src="./img/git.png"></a></button>
+        </div>
+    </div>
+</div>`;
+    modal.style.display = 'flex';
+
+    // 
+    // modalImg.src = `./img/${workDetails[i].workImg}`;
+    // modalDesc.innerHTML = workDetails[i].workDesc;
+    // modalLang.innerHTML = techLang;
+    // modalLive.setAttribute('href', workDetails[i].liveLink);
+    // modalSource.setAttribute('href', workDetails[i].projLink);
   });
 }
+
+
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
