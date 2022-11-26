@@ -18,7 +18,6 @@ function hamburgerAction() {
   }
 }
 
-
 menuIcon.addEventListener('click', hamburgerAction);
 
 // -----------Popup Window Section
