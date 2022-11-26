@@ -1,3 +1,4 @@
+// --------local storage
 const storageKey = 'contactFormLocalData';
 const formName = document.querySelector('#name-input');
 const formEmail = document.querySelector('#email-input');
