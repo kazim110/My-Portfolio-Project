@@ -891,4 +891,9 @@ form > h2 {
     flex-direction: row;
     align-items: flex-start;
   }
+
+  .mod-desc {
+    margin-top: 0;
+    margin-right: 8px;
+  }
 }

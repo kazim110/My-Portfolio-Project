@@ -70,42 +70,29 @@ JAVASCRIPT
 ### Prerequisites
 
 In order to run this project you need:
+npm
 
 
 ### Setup
 
 Clone this repository to your desired folder:
-
+git clone https://github.com/kazim110/My-Portfolio-Project
 
 ### Install
 
 Install this project with:
-
+npm install
 
 
 ### Usage
 
 To run the project, execute the following command:
-
-
-
-### Run tests
-
-To run tests, run the following command:
-
-
-
-
-### Deployment
-
-You can deploy this project using:
+npm start
 
 
 
 
 ## 👥 Authors <a name="authors">Mohammad Kazim</a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author1**
 
