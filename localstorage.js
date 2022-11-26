@@ -28,7 +28,7 @@
 //   nameInput.innerHTML =  currentName;
 //   emainInput.innerHTML =  currentEmail;
 //   textAreaInput.innerHTML =  currentText;
-  
+
 // }
 
 // bgcolorForm.onchange = populateStorage;
@@ -36,9 +36,9 @@
 // imageForm.onchange = populateStorage;
 
 const storageKey = 'contactFormLocalData';
-const formName = document.querySelector('#user-name');
-const formEmail = document.querySelector('#user-email');
-const formMsg = document.querySelector('#user-msg');
+const formName = document.querySelector('#name-input');
+const formEmail = document.querySelector('#email-input');
+const formMsg = document.querySelector('#text-area');
 const formFields = document.querySelectorAll('.input-field');
 
 function loadFromLocalData() {
@@ -55,6 +55,7 @@ function saveLocalData() {
     msg: formMsg.value,
   };
   localStorage.setItem(storageKey, JSON.stringify(savedData));
+  alert('data has saved');
 }
 
 window.onload = () => {
