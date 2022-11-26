@@ -156,3 +156,24 @@ window.onclick = function (event) {
     modal.style.display = 'none';
   }
 };
+
+//---------form validation----------//
+
+// Form validation
+
+function formValidation() {
+  const INVALID_MESSAGE = 'Please enter a correct email address format';
+  const email = document.getElementById('email-input').value;
+  const emailRegx = /^([a-z\d-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/;
+
+  document.forms[0].onsubmit = function (event) {
+    if (emailRegx.test(email)) {
+      document.getElementById('submit-message').style.color = 'green';
+      document.getElementById('submit-message').innerHTML = 'Successed!';
+    } else {
+      document.getElementById('submit-message').style.color = 'red';
+      document.getElementById('submit-message').innerHTML = INVALID_MESSAGE;
+      event.preventDefault();
+    }
+  };
+}
