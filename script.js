@@ -157,9 +157,7 @@ window.onclick = function (event) {
   }
 };
 
-//---------form validation----------//
-
-// Form validation
+// ---------form validation----------
 
 function formValidation() {
   const INVALID_MESSAGE = 'Please enter a correct email address format';
@@ -177,3 +175,6 @@ function formValidation() {
     }
   };
 }
+
+const formBtn = document.querySelector('.contactme-btn');
+formBtn.addEventListener('click', formValidation);
