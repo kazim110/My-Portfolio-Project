@@ -111,11 +111,6 @@ for (let j = 0; j < workDetails.length; j += 1) {
 
 const modal = document.getElementById('myModal');
 const modalTitle = document.querySelector('.mod-title');
-const modalImg = document.querySelector('.mod-img');
-const modalDesc = document.querySelector('.mod-desc');
-const modalLang = document.querySelector('.mod-lang');
-const modalLive = document.querySelector('.mod-live');
-const modalSource = document.querySelector('.mod-source');
 const span = document.getElementsByClassName('close')[0];
 
 let modalDynamic = document.getElementById('modal-daynamic');
@@ -146,13 +141,6 @@ for (let i = 0; i < workDetails.length; i += 1) {
     </div>
 </div>`;
     modal.style.display = 'flex';
-
-    //
-    // modalImg.src = `./img/${workDetails[i].workImg}`;
-    // modalDesc.innerHTML = workDetails[i].workDesc;
-    // modalLang.innerHTML = techLang;
-    // modalLive.setAttribute('href', workDetails[i].liveLink);
-    // modalSource.setAttribute('href', workDetails[i].projLink);
   });
 }
 
