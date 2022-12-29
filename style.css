@@ -146,7 +146,7 @@ header {
   left: 0;
   margin: 0;
   padding: 8px 20px;
-  background: #6070ff;
+  background: #000;
   opacity: 0.8;
   direction: rtl;
 }
@@ -719,7 +719,6 @@ form > h2 {
 
   .title {
     width: auto;
-    height: 122px;
     font-size: 48px;
     line-height: 60px;
     letter-spacing: 0.37px;
@@ -746,7 +745,7 @@ form > h2 {
   }
 
   .social-media-list {
-    margin: 0 220px;
+    margin: 0;
   }
 
   ul li {
