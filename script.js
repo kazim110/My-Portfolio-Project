@@ -43,7 +43,7 @@ const workDetails = [
   },
   {
     workId: '3',
-    workTitle: 'Multi-Post Stories',
+    workTitle: 'Stories',
     workImg: 'snapshoot-portfolio2.png',
     workDesc: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.',
     workLanguages: ['css', 'html', 'bootstrap', 'Ruby'],
@@ -115,7 +115,6 @@ const span = document.getElementsByClassName('close')[0];
 
 const modalDynamic = document.getElementById('modal-daynamic');
 
-modalDynamic.innerHTML = '';
 
 for (let i = 0; i < workDetails.length; i += 1) {
   document.querySelector(`.work-modal-${i}`).addEventListener('click', () => {
@@ -125,8 +124,9 @@ for (let i = 0; i < workDetails.length; i += 1) {
     });
     modalTitle.innerHTML = workDetails[i].workTitle;
 
+    modalDynamic.innerHTML ='';
     modalDynamic.innerHTML += `<img class="mod-img" src="./img/${workDetails[i].workImg}" alt="Avatar">
-<div class="mod-desc-content">
+    <div class="mod-desc-content">
     <p class="mod-desc">
     ${workDetails[i].workDesc}
     </p> 
